@@ -12,8 +12,8 @@
         <div class="post">
             <h3 class="user">@<%= post.username %></h3>
             <h4 class="content"><%= post.content %></h4> <br>
-            <a href="http://localhost:8080/posts/<%=post.id %>">See in Detail</a>
-            <a href="http://localhost:8080/posts/<%=post.id %>/edit">Edit</a> 
+            <a href="https://snapgram-2nzb.onrender.com/posts/<%=post.id %>">See in Detail</a>
+            <a href="https://snapgram-2nzb.onrender.com/posts/<%=post.id %>/edit">Edit</a> 
             <br>
             <form method="post" action="/posts/<%=post.id %>?_method=DELETE">
                 <button>Delete Post</button>
@@ -23,6 +23,6 @@
 
     <br>
     <br>
-    <a href="http://localhost:8080/posts/new">Create New Post</a>
+    <a href="https://snapgram-2nzb.onrender.com/posts/new">Create New Post</a>
 </body>
 </html>
