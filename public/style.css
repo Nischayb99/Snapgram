@@ -1,9 +1,143 @@
-h1{
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #4d4d4d;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.header-con{
+    background-color: #e1d7d7;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-con{
+    width: 10rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    margin-left: 1rem;
     color: maroon;
+}
+.new-btn-con{
+    width: 10rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new-btn{
+
+    width: 7rem;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10rem;
+    text-decoration: none;
+    color: #2f00ff;
+    border: 0.1rem solid #000;
+    font-size: 0.8rem;
+    transition: 0.3s ease;
+}
+.new-btn:hover{
+    font-size: 0.85rem;
+    background-color: #d29f9f;
+}
+.main-con{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4d4d4d;
 }
 .post{
     background-color: blanchedalmond;
+    width: 21rem;
+    border-radius: 1rem;
+    margin: 0.6rem 0.6rem 0rem 0.6rem;
+    border: 0.2rem solid black;
 }
-.user{
+.username-con{
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+}
+.username{
+    margin: 0.3rem 0.6rem 0.6rem 0.6rem;
     font-style: italic;
+}
+.content-con{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content{
+    margin: 0.3rem 0.6rem 0.6rem 0.6rem;
+}
+.post-btn-con{
+    width: 50%;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+}
+.see-btn{
+    width: 1.9rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    text-decoration: none;
+    color: #2f00ff;
+    border: 0.07rem solid #000;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+    margin-bottom: 0.4rem;
+}
+.see-btn:hover{
+    background-color: #d29f9f;
+}
+
+.edit-btn{
+    width: 2.3rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    text-decoration: none;
+    color: #2f00ff;
+    border: 0.07rem solid #000;
+    font-size: 0.9rem;
+    transition: 0.35s ease;
+    margin-bottom: 0.4rem;
+}
+.edit-btn:hover{
+    background-color: #d29f9f;
+}
+.delete-btn{
+    background: none;
+    width: 3.5rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    color: #c10909;
+    border: 0.07rem solid #000;
+    font-size: 0.9rem;
+    transition: 0.4s ease;
+    margin-bottom: 0.4rem;
+}
+.delete-btn:hover{
+    background-color: #d7bdbd;
 }

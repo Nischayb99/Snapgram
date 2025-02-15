@@ -7,22 +7,57 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Snapgram</h1>
-    <% for(post of posts){%>
-        <div class="post">
-            <h3 class="user">@<%= post.username %></h3>
-            <h4 class="content"><%= post.content %></h4> <br>
-            <a href="https://snapgram-2nzb.onrender.com/posts/<%=post.id %>">See in Detail</a>
-            <a href="https://snapgram-2nzb.onrender.com/posts/<%=post.id %>/edit">Edit</a> 
-            <br>
-            <form method="post" action="/posts/<%=post.id %>?_method=DELETE">
-                <button>Delete Post</button>
-            </form>
-        </div>
-    <%} %>
+    <header>
+        <div class="header-con">
+            <div class="logo-con"><h1 class="logo">Snapgram</h1></div>
+            <div class="new-btn-con">
 
-    <br>
-    <br>
-    <a href="https://snapgram-2nzb.onrender.com/posts/new">Create New Post</a>
+                <!-- <a href="https://snapgram-2nzb.onrender.com/posts/new">Create New Post</a> -->
+                <a class="new-btn" href="<%= process.env.NODE_ENV === 'production' ? 'https://snapgram-2nzb.onrender.com/posts/new' : 'http://localhost:8080/posts/new' %>">
+                    Create New Post
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-con">
+            <% for(post of posts){%>
+                <div class="post-con">
+                    <div class="post">
+                        <div class="username-con">
+                            <h3 class="user username">@<%= post.username %></h3>
+                        </div>
+                        <div class="content-con">
+                            <h4 class="content"><%= post.content %></h4> <br>
+                        </div>
+        
+                        <div class="post-btn-con">
+                            <div class="see-btn-con">
+                                <!-- <a href="https://snapgram-2nzb.onrender.com/posts/<%=post.id %>">See in Detail</a> -->
+                                <a class="see-btn" href="<%= process.env.NODE_ENV === 'production' ? 'https://snapgram-2nzb.onrender.com/posts/' + post.id : 'http://localhost:8080/posts/' + post.id %>">
+                                See
+                                </a>
+                            </div>
+          
+                            <div class="edit-btn-con">
+                                <!-- <a href="https://snapgram-2nzb.onrender.com/posts/<%=post.id %>/edit">Edit</a>  -->
+                                <a class="edit-btn" href="<%= process.env.NODE_ENV === 'production' ? 'https://snapgram-2nzb.onrender.com/posts/' + post.id + '/edit' : 'http://localhost:8080/posts/' + post.id + '/edit' %>">
+                                Edit
+                                </a>
+                            </div>
+        
+                            <div class="delete-btn-con">
+                                <br>
+                                <form method="post" action="/posts/<%=post.id %>?_method=DELETE">
+                                    <button class="delete-btn">Delete</button>
+                                </form>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <%} %>
+        </div>
+    </main>
 </body>
 </html>
