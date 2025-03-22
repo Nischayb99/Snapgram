@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #4d4d4d;
+}
+.new-con{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #4d4d4d;
+}
+.form-con{
+    border-radius: 1.8rem;
+    border: solid #000 0.2rem;
+    background-color: blanchedalmond;
+}
+.form{
+    padding:1rem 1rem 1rem 1rem;
+}
+.new-head-con{
+    display: flex;
+    justify-content: center;
+}
+.new-head{
+    margin-bottom: 0.5rem;
+    color: #ba0f0f;
+}
+.username-in{
+    background-color: #b4f7a6;
+}
+.new-txt-ara{
+    color: #000;
+    background-color: #b4f7a6;
+}
+.submit-btn-con{
+    display: flex;
+    justify-content: center;
+}
+.submit-btn{
+    border: solid #000 0.13rem; 
+    padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #0c63dd;
+    transition: 0.3s ease;
+}
+.submit-btn:hover{
+    font-size: 0.8rem ;
+}
