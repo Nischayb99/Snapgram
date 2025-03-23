@@ -4,35 +4,31 @@
 }
 body{
     background-color: #4d4d4d;
-}
-.new-con{
-    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    background-color: #4d4d4d;
+    align-items: center;
+    height: 100vh;
 }
-.form-con{
+.edit-con{
     border-radius: 1.8rem;
     border: solid #000 0.2rem;
     background-color: blanchedalmond;
 }
-.form{
+.post-con{
     padding:1rem 1rem 1rem 1rem;
 }
-.new-head-con{
+.edit-head-con{
     display: flex;
     justify-content: center;
 }
-.new-head{
+.edit-head{
     margin-bottom: 0.5rem;
     color: #ba0f0f;
 }
-.username-in{
-    background-color: #e5ffe0;
+.edit-gap{
+    margin-bottom: 0.5rem;
 }
-.new-txt-ara{
+.edit-txt-ara{
     color: #000;
     background-color: #e5ffe0;
 }

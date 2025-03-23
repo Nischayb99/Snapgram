@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post in Detail</title>
     <link rel="stylesheet" href="/show.css">
 </head>
+
 <body>
-    <h2>Here is your post in detail</h2>
-    <p>post id : <%= post.id %></p>
-    <div class="post">
-        <h3 class="user">@<%= post.username %></h3>
-        <h4><%= post.content %></h4>
+    <div class="see-con">
+        <div class="post-con">
+            <div class="see-head-con">
+                <h2 class="see-head">Here is your post in detail</h2>
+            </div><hr><br>
+            <p class="see-gap">post id : <%= post.id %>
+            </p>
+            <div class="post">
+                <h3 class="user see-gap">@<%= post.username %>
+                </h3>
+                <h4 class="see-gap">
+                    <%= post.content %>
+                </h4>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

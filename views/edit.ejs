@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Post</title>
+    <link rel="stylesheet" href="/edit.css">
 </head>
+
 <body>
-    <h2>Edit your post</h2>
-    <p>Post id : <%= post.id %></p>
-    <p>Post username : @<%= post.username %></p>
-    <form method="post" action="/posts/<%=post.id %>?_method=PATCH">
-        <textarea rows="10" cols="35" name="content"><%= post.content %></textarea>
-        <button>Submit</button>
-    </form>
+    <div class="edit-con">
+        <div class="post-con">
+            <div class="edit-head-con">
+                <h2 class="edit-head">Edit your post</h2>
+            </div><hr><br>
+            <p class="edit-gap">Post id : <%= post.id %>
+            </p>
+            <p class="edit-gap">Post username : @<%= post.username %>
+            </p>
+            <form method="post" action="/posts/<%=post.id %>?_method=PATCH">
+                <textarea class="edit-gap edit-txt-ara" rows="10" cols="35" name="content"><%= post.content %></textarea>
+                <div class="submit-btn-con">
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

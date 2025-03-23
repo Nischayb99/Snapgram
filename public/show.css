@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #4d4d4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.see-con{
+    border-radius: 1.8rem;
+    border: solid #000 0.2rem;
+    background-color: blanchedalmond;
+}
+.post-con{
+    padding:1rem 1rem 1rem 1rem;
+}
+.see-head-con{
+    display: flex;
+    justify-content: center;
+}
+.see-head{
+    margin-bottom: 0.5rem;
+    color: #ba0f0f;
+}
+.see-gap{
+    margin-bottom: 0.5rem;
+}
